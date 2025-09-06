@@ -2,18 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>TODO Cloud</title>
+    <title>JUle Cloud</title>
 </head>
 <body>
-    <h1>Ma TODO List</h1>
+    <h1>Jule Open  List</h1>
     <form action="/add" method="post">
         <input type="text" name="task" placeholder="Nouvelle tâche">
-        <button type="submit">Ajouter</button>
+        <button type="submit">Submit</button>
     </form>
     <ul>
         {% for todo in todos %}
-            <li>{{ todo }} <a href="/delete/{{ loop.index0 }}">[x]</a></li>
+            <li>{{ todo }} <a href="/delete/{{ loop.index0 }}">[Efface]</a></li>
         {% endfor %}
     </ul>
 </body>
 </html>
+

@@ -1,5 +1,4 @@
 web: gunicorn app:app
-
 blinker==1.9.0
 click==8.2.1
 colorama==0.4.6
